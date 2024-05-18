@@ -1,9 +1,18 @@
 import './App.css';
+import InputComponent from "./InputComponent";
+import RegisterForm from "./RegisterForm";
 
 function App() {
-  return (
-    <h1>Hello</h1>
-  );
+    return (
+        <>
+            <p>
+                <InputComponent></InputComponent>
+            </p>
+            <p>
+                <RegisterForm></RegisterForm>
+            </p>
+        </>
+    );
 }
 
 export default App;
