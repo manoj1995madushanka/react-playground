@@ -1,0 +1,25 @@
+state:
+    It is component internal data that determines behaviour
+
+component can be sateful or stateless
+
+Lifting state up is coding your app so that the state from the child component is moved to the parent component
+and the child component simply receives it via props.
+
+Prop drilling is a commonly used term to describe having to pass Stage 3 props in several layers of components,
+from the parent to the child, to the grandchild, and so on.
+Note that if the source data changes, you will have to transfer those changes across the entire prop drilled
+structure.
+
+React context api solves the props drilling issue
+
+Props drilling simply means passing a prop through props objects through several layers of components.
+The more layers there are, the more repetitive and unnecessary this feels.
+There are various ways to deal with this, as you’ll learn in the lesson items that follow
+
+Context Provider:
+    component that stores the state
+
+Context Consumer
+    Component that will use the state
+
