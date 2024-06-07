@@ -5,6 +5,7 @@ import {Link, Route, Routes} from "react-router-dom";
 import Contact from "./Contact";
 import cat from './assets/images/img.png';
 import MediaPlayer from "./MediaPlayer";
+import AssPlayer from "./MediaPlayerAssignment";
 
 function App() {
 
@@ -32,6 +33,9 @@ function App() {
 
             <br/>
             <MediaPlayer/>
+
+            <br/>
+            <AssPlayer/>
         </div>
     );
 }
