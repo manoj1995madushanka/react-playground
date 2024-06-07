@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe";
 import {Link, Route, Routes} from "react-router-dom";
 import Contact from "./Contact";
 import cat from './assets/images/img.png';
+import MediaPlayer from "./MediaPlayer";
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
             <img height={200} src={require("./assets/images/img.png")} alt="An image of the cat"/>
             <img height={200} src={randomImageUrl} alt="An image of the cat"/>
 
+            <br/>
+            <MediaPlayer/>
         </div>
     );
 }
