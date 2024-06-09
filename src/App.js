@@ -1,11 +1,11 @@
 import './App.css';
-import Main from "./advWeek1/assignment1/Main";
+import Signup from "./advWeek1/forms/Signup";
 
 function App() {
     return (
         <div>
             <h1>Hello</h1>
-            <Main/>
+            <Signup/>
         </div>
     );
 }
