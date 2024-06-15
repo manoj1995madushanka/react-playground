@@ -1,0 +1,27 @@
+https://formik.org/
+
+https://github.com/jquense/yup
+
+Props passed to the component (Immutable)
+
+State managed within the component
+
+Stateful Components
+    Client-server communication
+    Data Processing
+    Responding to user events
+
+Stateless components
+    Visualization
+    Formatting Logic
+
+Props drilling problem
+    Passing data through all component tree levels (even components that do not need it)
+
+React context API solves the props drilling problem
+    Alternative way to pass data
+    useful for global state
+
+
+
+
