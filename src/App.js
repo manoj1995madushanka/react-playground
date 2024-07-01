@@ -1,5 +1,6 @@
 import './App.css';
 import {useEffect, useState} from "react";
+import Assignment from "./Assignment";
 
 function App() {
   const [user, setUser] = useState([]);
@@ -19,10 +20,13 @@ function App() {
         <h1>Customer data</h1>
         <h2>Name:{user.results[0].name.first}</h2>
         <img src={user.results[0].picture.large} alt=""/>
+
+          <Assignment/>
       </div>
   ) : (
       <h1>Data pending...</h1>
   );
+
 }
 
 export default App;
