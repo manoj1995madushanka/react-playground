@@ -8,7 +8,14 @@ describe("Feedback Form", () => {
     const handleSubmit = jest.fn();
     render(<FeedbackForm onSubmit={handleSubmit} />);
 
-    // You have to write the rest of the test below to make the assertion pass
+    const rangeInput = screen.getByLabelText(/Score:/);
+    fireEvent.change(rangeInput, { target: { value: score } });
+
+    const textArea = screen.getByLabelText(/Comments:/);
+    fireEvent.change(textArea, { target: { value: comment } });
+
+    const submitButton = screen.getByRole("button");
+    fireEvent.click(submitButton);
 
     expect(handleSubmit).toHaveBeenCalledWith({
       score,
@@ -21,7 +28,11 @@ describe("Feedback Form", () => {
     const handleSubmit = jest.fn();
     render(<FeedbackForm onSubmit={handleSubmit} />);
 
-    // You have to write the rest of the test below to make the assertion pass
+    const rangeInput = screen.getByLabelText(/Score:/);
+    fireEvent.change(rangeInput, { target: { value: score } });
+
+    const submitButton = screen.getByRole("button");
+    fireEvent.click(submitButton);
 
     expect(handleSubmit).toHaveBeenCalledWith({
       score,
